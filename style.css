@@ -138,6 +138,7 @@ main {
     border-radius: 20px;
     position: relative;
     transition: 1.5s;
+    margin-bottom: 20px;
 }
 
 .btns button:hover {
@@ -166,7 +167,7 @@ main {
 .quem-somos {
     width: 100vw;
     background-color: #1e1e1e;
-    margin-top: 100px
+    margin-top: 00px
 }
 
 .qs-primary {
