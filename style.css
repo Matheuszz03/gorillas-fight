@@ -206,7 +206,10 @@ main {
     background-color: rgba(65, 0, 0, 0.178);
     margin: 50px;
     text-align: justify;
-    border-top-left-radius: 260px;
+    border-top-left-radius: 600px;
+    border-top-right-radius: 900px;
+    border-bottom-right-radius: 900px;
+    border-bottom-left-radius: 600px;
 }
 
 .text p {
