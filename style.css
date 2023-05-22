@@ -108,7 +108,7 @@ main {
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    height: 366px;
+    height: 300px;
     background: linear-gradient(to bottom, rgba(8, 8, 8, 0.705), rgb(30, 30, 30)), url(img/hd-wallpaper-g0128b789f_1280\ 1.png);
     background-size: cover;
     margin-top: 254px;
@@ -253,7 +253,6 @@ main {
     margin: 50px;
     font-size: 3rem;
     border-bottom: 3px solid #0683F0;
-    width: 230px;
 }
 
 .text-mod {
@@ -272,6 +271,8 @@ main {
     width: 30%;
     display: flex;
     flex-direction: column;
+    border: 1px solid #0683F0;
+    border-radius: 20px;
 }
 
 
@@ -283,9 +284,16 @@ main {
 
 .muay {
     margin: 0 ;
+    padding: 20px;
     width: 30%;
     display: flex;
     flex-direction: column;
+    border: 1px solid #0683F0;
+    border-radius: 20px;
+}
+
+.muay img {
+    /* transform: scale(.7); */
 }
 
 .taek {
@@ -294,4 +302,6 @@ main {
     width: 30%;
     display: flex;
     flex-direction: column;
+    border: 1px solid #0683F0;
+    border-radius: 20px;
 }
