@@ -199,12 +199,14 @@ main {
     margin: 50px;
     font-size: 3rem;
     border-bottom: 3px solid red;
+    width: 230px;
 }
 
 .text {
     font-size: 3rem;
-    background-color: rgba(65, 0, 0, 0.178);
-    margin: 50px;
+    background: linear-gradient(0deg, rgba(137, 15, 15, 0.17), rgba(137, 15, 15, 0.17)),
+    linear-gradient(0deg, rgba(137, 15, 15, 0), rgba(137, 15, 15, 0));
+    margin: 0 50px;
     text-align: justify;
     border-top-left-radius: 600px;
     border-top-right-radius: 900px;
@@ -235,4 +237,62 @@ main {
 
 .imgDir {
     margin-right: 200px;
+}
+
+/* MODALIDADES */
+
+.modalidades {
+    
+}
+
+.modalidades h3 {
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+
+.mo-primary {
+    text-transform: uppercase;
+    text-align: left;
+    margin: 50px;
+    font-size: 3rem;
+    border-bottom: 3px solid #0683F0;
+    width: 230px;
+}
+
+.text-mod {
+    font-size: 2.3rem;
+    background: linear-gradient(0deg, rgba(1, 26, 112, 0.2), rgba(1, 26, 112, 0.2)),
+    linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    margin: 0 50px;
+    text-align: justify;
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxe {
+    margin: 0 ;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.text-mod h3 {
+    margin-top: 20px;
+    text-align: left;
+}
+
+
+.muay {
+    margin: 0 ;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.taek {
+    margin: 0 ;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
 }
