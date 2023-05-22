@@ -112,29 +112,25 @@ main {
     background: linear-gradient(to bottom, rgba(8, 8, 8, 0.705), rgb(30, 30, 30)), url(img/hd-wallpaper-g0128b789f_1280\ 1.png);
     background-size: cover;
     margin-top: 254px;
-    border-top: 3px solid white;
+    border-top: 1px solid white;
 }
 
 .primary-text {
     background-color: rgb(124, 0, 0);
-    width: 500px;
+    /* width: 500px; */
+    padding: 3px 20px;
     border: 3px solid white;
     border-radius: 30px;
-    font-size: 4rem;
-    margin-top: -230px;
+    font-size: 3.4rem;
+    /* margin-top: -230px; */
     text-align: center;
     transition: .6s;
     text-shadow: 0px 0px 14px rgb(0, 0, 0);
 }
 
-.primary-text:hover {
-    background-color: #1e1e1e;
-    border: none;
-}
-
 .second-text {
     margin-top: 30px;
-    margin-bottom: 7rem;
+    /* margin-bottom: 7rem; */
     font-size: 3rem;
     color: rgb(182, 182, 182);
 }
@@ -147,18 +143,19 @@ main {
     gap: 70px;
 }
 
-.btns a {color: white; padding: 23px;}
+.btns a {color: white; padding: 20px;}
 
 .btns button {
     width: 200px;
     height: 60px;
     cursor: pointer;
-    border: 1px solid white;
+    border: none;
+    /* border: 1px solid white; */
     color: white;
     text-transform: uppercase;
     background-color: transparent;
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 2.1rem;
     letter-spacing: 0.2rem;
     border-radius: 20px;
     position: relative;
@@ -176,8 +173,8 @@ main {
     left: 0;
     position: absolute;
     width: 0;
-    height: 60px;
-    background-color: rgba(124, 0, 0, 0.5);
+    height: 5px;
+    background-color: rgba(124, 0, 0, 0.712);
     z-index: -1;
     transition: .7s;
 }
@@ -199,7 +196,7 @@ main {
     margin: 50px;
     font-size: 3rem;
     border-bottom: 3px solid red;
-    width: 230px;
+    /* width: 230px; */
 }
 
 .text {
@@ -242,12 +239,12 @@ main {
 /* MODALIDADES */
 
 .modalidades {
-    
+    margin-top: 200px;    
 }
 
 .modalidades h3 {
     text-transform: uppercase;
-    margin: 0 auto;
+    margin:0 auto;
 }
 
 .mo-primary {
@@ -271,6 +268,7 @@ main {
 
 .boxe {
     margin: 0 ;
+    padding: 20px;
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -291,7 +289,8 @@ main {
 }
 
 .taek {
-    margin: 0 ;
+    margin: 0;
+    padding: 20px;
     width: 30%;
     display: flex;
     flex-direction: column;
