@@ -45,8 +45,13 @@
         display: none;
     }
     .logos-icons a {
-        width: 5px;
+        /* width: 5px; */
         margin: 20px;
+    }
+    .logos-icons {
+        margin: 0;
+        align-items: center;
+        justify-content: center;
     }
 }
 
