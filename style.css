@@ -1,307 +1,152 @@
 @charset "UTF-8";
 
+@import url(styles/aula_gratuita.css);
+@import url(styles/header.css);
+@import url(styles/quem_somos.css);
+@import url(styles/modalidades.css);
+@import url(styles/localizacao.css);
+/* @import url(mq.css); */
+
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Jost', sans-serif;
     list-style: none;
     text-decoration: none;
-    box-sizing: border-box;
 }
-*::selection{background-color: rgb(126, 0, 0);}
 
-::-webkit-scrollbar-thumb {background-color: rgb(124, 0, 0); border-radius: 5px;}
-::-webkit-scrollbar{width: 10px; background-color: #1e1e1e;}
+*::selection {
+    background-color: rgb(126, 0, 0);
+}
 
-/* Fundo da tela */
-html {
-    width: 100vw;
-    height: 100vh;
+body {
+    background: rgb(27,25,25);
+    background: linear-gradient(90deg, rgba(27,25,25,1) 20%, rgba(37,36,36,1) 49%, rgba(27,25,25,1) 80%);
+    height: 100%;
     color: white;
-    font-size: 62.5%;
     overflow-x: hidden;
 }
-body {
-    background: linear-gradient(to right, rgb(8, 8, 8), rgba(0, 0, 0, 0.705)) ,url(img/image\ 2.png);
-    background-position: center center;
-    background-size: cover;
-    background-position-y: 0px;
-    background-repeat: no-repeat;
-}
 
-/* Menu - header - navbar */
-header {
-    width: 100%;
-    height: 7vh;
-    background-color: rgba(22, 22, 22, 0.2);
-}
+/* Main */
 
-.menu-content {
-    text-transform: uppercase;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 1.8rem;
-}
+/* Footer */
 
-.logo {
-    font-size: 1.1rem;
-    letter-spacing: 0.4rem;
-    cursor: pointer;
-}
-
-.menu-content .list-itens {
-    display: flex;
-    gap: 10px;
-}
-.menu-content .list-itens a {
-    color: white;
-    padding: 1.5rem;
-    transform: 2ms ease-in;
-    position: relative;
-}
-.menu-content .list-itens a::before {
-    content: ' ';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0px;
-    height: 2px;
-    background-color: rgb(124, 0, 0);
-    transition: all 1.5s ease;
-}
-
-.menu-content .list-itens a:hover::before {
-    width: 100%;
-}
-
-/* Centro - Conteudo principal */
-
-main {
-    height: 93vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.main-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: auto;
-}
-
-.main-content img {
-    transform: scale(.8);
-}
-
-/* Textos conteudo principal */
-
-.aula-gratuita {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    height: 300px;
-    background: linear-gradient(to bottom, rgba(8, 8, 8, 0.705), rgb(30, 30, 30)), url(img/hd-wallpaper-g0128b789f_1280\ 1.png);
-    background-size: cover;
-    margin-top: 254px;
-    border-top: 1px solid white;
-}
-
-.primary-text {
-    background-color: rgb(124, 0, 0);
-    /* width: 500px; */
-    padding: 3px 20px;
-    border: 3px solid white;
-    border-radius: 30px;
-    font-size: 3.4rem;
-    /* margin-top: -230px; */
-    text-align: center;
-    transition: .6s;
-    text-shadow: 0px 0px 14px rgb(0, 0, 0);
-}
-
-.second-text {
-    margin-top: 30px;
-    /* margin-bottom: 7rem; */
-    font-size: 3rem;
-    color: rgb(182, 182, 182);
-}
-
-/* Botões */
-
-.btns {
-    display: flex;
-    justify-content: center;
-    gap: 70px;
-}
-
-.btns a {color: white; padding: 20px;}
-
-.btns button {
-    width: 200px;
+footer {
+    /* width: 100%;
     height: 60px;
-    cursor: pointer;
-    border: none;
-    /* border: 1px solid white; */
-    color: white;
-    text-transform: uppercase;
-    background-color: transparent;
-    font-weight: bold;
-    font-size: 2.1rem;
-    letter-spacing: 0.2rem;
-    border-radius: 20px;
-    position: relative;
-    transition: 1.5s;
-}
-
-.btns button:hover {
-    border: none;
-}
-
-.btns button::before {
-    content: '';
-    border-radius: 20px;
-    bottom: 0;
-    left: 0;
-    position: absolute;
-    width: 0;
-    height: 5px;
-    background-color: rgba(124, 0, 0, 0.712);
-    z-index: -1;
-    transition: .7s;
-}
-
-.btns button:hover::before {
-    width: 100%;
-}
-
-/* QUEM SOMOS */
-
-.quem-somos {
-    width: 100vw;
-    background-color: #1e1e1e;
-}
-
-.qs-primary {
-    text-transform: uppercase;
-    text-align: left;
-    margin: 50px;
-    font-size: 3rem;
-    border-bottom: 3px solid red;
-    /* width: 230px; */
-}
-
-.text {
-    font-size: 3rem;
-    background: linear-gradient(0deg, rgba(137, 15, 15, 0.17), rgba(137, 15, 15, 0.17)),
-    linear-gradient(0deg, rgba(137, 15, 15, 0), rgba(137, 15, 15, 0));
-    margin: 0 50px;
-    text-align: justify;
-    border-top-left-radius: 600px;
-    border-top-right-radius: 900px;
-    border-bottom-right-radius: 900px;
-    border-bottom-left-radius: 600px;
-}
-
-.text p {
+    padding: 20px; */
     text-align: center;
-    margin: 20px;
+    background-color: #131313;
 }
 
-.flex {
+html {
+    scroll-behavior: smooth;
+}
+
+.treino1 {
+    margin-top: 2%;
+    background-color: #C51111;
+    width: 15%;
+    padding: 0.6%;
+    border-radius: 0px 30px 30px 0px;
+}
+
+.treinokids p {
+    width: 50%;
+    font-size: 24px;
+}
+
+.treinokids {
+    /* background-color: rgba(87, 0, 0, 0.356); */
+    width: 100%;
+    max-width: 1080px;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 30px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+
 }
 
-.text span img {
-    margin: 30px 0px 20px 300px;
-    display: inline-block;
-    transform: scale(1);
+.treinokids img {
+    width: 30%;
+    min-width: 200px;
+    margin: 20px 0;
+}
+.h1{
+     width: 17%;
+     text-align: center;
+     border-bottom: 3px solid #c51111;
+     margin-top: 50px;
+     margin-bottom: -20px;
+}
+.mod-treino{
+    margin-left: 10px;
+}
+.linha1{
+    border-radius: 10px;
 }
 
-.flex p {
-    margin-left: 150px;
-    text-align: left;
+
+.logos-icons a img{
+    padding: 6%;
+    width: 2rem;
+}
+.container-footer img{
+    width: 6rem;
+    padding-top:1% ;
 }
 
-.imgDir {
-    margin-right: 200px;
+footer {
+    width: 100%;
+    margin: 0 5px;
 }
-
-/* MODALIDADES */
-
-.modalidades {
-    margin-top: 200px;    
-}
-
-.modalidades h3 {
-    text-transform: uppercase;
-    margin:0 auto;
-}
-
-.mo-primary {
-    text-transform: uppercase;
-    text-align: left;
-    margin: 50px;
-    font-size: 3rem;
-    border-bottom: 3px solid #0683F0;
-}
-
-.text-mod {
-    font-size: 2.3rem;
-    background: linear-gradient(0deg, rgba(1, 26, 112, 0.2), rgba(1, 26, 112, 0.2)),
-    linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
-    margin: 0 50px;
-    text-align: justify;
+.container-footer{
     display: flex;
     justify-content: space-between;
+    text-align: center;
+}
+.container-footer ul{
+    width: 25%;
+    padding: 1.5%;
+}
+.container-footer li{
+    padding: 0.5%;
+}
+.container-footer p{
+    padding: 1.5%;
+}
+.container-footer h2{
+    border-bottom: 1px solid white;
 }
 
-.boxe {
-    margin: 0 ;
-    padding: 20px;
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #0683F0;
-    border-radius: 20px;
-}
+@media screen and (max-width: 769px) {
+    .h1 {
+        width: 200px;
+        margin-top: 100px;
+    }
+    .treinokids {
+        flex-direction: column;
+    }
+    .treinokids p {
+        width: 80%;
+    }
+    .treinokids img {
+        width: 70%;
+    }
 
-
-.text-mod h3 {
-    margin-top: 20px;
-    text-align: left;
-}
-
-
-.muay {
-    margin: 0 ;
-    padding: 20px;
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #0683F0;
-    border-radius: 20px;
-}
-
-.muay img {
-    /* transform: scale(.7); */
-}
-
-.taek {
-    margin: 0;
-    padding: 20px;
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #0683F0;
-    border-radius: 20px;
+    .container-footer img {
+        display: none;
+    }
+    .container-footer {
+        width: 100%;
+    }
 }

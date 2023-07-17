@@ -1,0 +1,12 @@
+@media screen and (max-width: 1080px) {
+    header {
+        height: 100%;
+    }
+    .list-items {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+
+}
