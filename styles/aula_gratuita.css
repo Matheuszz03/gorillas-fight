@@ -30,7 +30,7 @@
 
 @media screen and (max-width: 768px) {
     .aula-gratuita {
-        background: linear-gradient(to right, rgb(8, 8, 8), rgba(0, 0, 0, 0.541)) ,url(../img/hd-wallpaper-g0128b789f_1280\ 1.png);
+        /* background: linear-gradient(to right, rgb(8, 8, 8), rgba(0, 0, 0, 0.541)) ,url(../img/hd-wallpaper-g0128b789f_1280\ 1.png); */
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
